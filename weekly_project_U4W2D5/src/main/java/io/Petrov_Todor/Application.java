@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Application {
     public static void main(String[] args) {
-        // Creiamo una lista per memorizzare i libri
+
         List<Libri_Collection> libriList = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
 
@@ -27,7 +27,7 @@ public class Application {
 
             System.out.print("Inserisci il numero di pagine: ");
             int numeroPagine = scanner.nextInt();
-            scanner.nextLine(); // Consuma il newline rimasto
+            scanner.nextLine();
 
             Libri_Collection libro = new Libri_Collection(autore, genere, titolo, annoDiPubblicazione, numeroPagine);
             libriList.add(libro);
@@ -40,7 +40,7 @@ public class Application {
             }
         }
 
-        // Stampa tutti i libri memorizzati
+       
         System.out.println("Lista dei libri memorizzati:");
         for (Libri_Collection libro : libriList) {
             System.out.println(libro);
