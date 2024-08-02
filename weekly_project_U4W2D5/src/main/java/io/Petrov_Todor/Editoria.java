@@ -1,10 +1,12 @@
 package io.Petrov_Todor;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-public abstract class Editoria {
-
-    protected String autore;
-    protected String genere;
+abstract class Editoria {
+    private static final Logger loger = LoggerFactory.getLogger(Editoria.class);
+    String autore;
+    String genere;
 
     //ATTRIBUTI
     public Editoria(String autore, String genere) {
